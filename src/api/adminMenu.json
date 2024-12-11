@@ -1,0 +1,34 @@
+[
+  {
+    "label": "Members",
+    "href": "/admin/members",
+    "icon": "ci:users",
+    "hasChildren": false,
+    "parent": "members",
+    "isLink": true
+  },
+  {
+    "label": "Blog",
+    "href": "/admin/blog",
+    "icon": "ci:users",
+    "hasChildren": false,
+    "parent": "blog",
+    "isLink": true
+  },
+  {
+    "label": "Events",
+    "href": "/admin/events",
+    "icon": "ci:users",
+    "hasChildren": false,
+    "parent": "events",
+    "isLink": true
+  },
+  {
+    "label": "Site Settings",
+    "href": "/admin/site-settings",
+    "icon": "ci:users",
+    "hasChildren": false,
+    "parent": "reviews",
+    "isLink": true
+  }
+]

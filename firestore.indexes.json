@@ -1,0 +1,19 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "ASC",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "fullname",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "id",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
