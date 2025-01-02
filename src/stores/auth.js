@@ -56,7 +56,7 @@ export default {
       auth: (state) => state.auth,
       isLoading: (state) => state.loading,
       getUser: (state) => state.user,
-      getAuthenticated: (state) => !!state._user_token,
+      getAuthenticated: (state) => !!state._owo_token,
       getSubscription: (state) => state.subscription,
       getRecentSearches: (state) => state.recent_searches
     }

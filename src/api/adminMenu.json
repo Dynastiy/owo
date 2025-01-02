@@ -16,6 +16,14 @@
     "isLink": true
   },
   {
+    "label": "Volunteers",
+    "href": "/admin/volunteers",
+    "icon": "ci:users",
+    "hasChildren": false,
+    "parent": "volunteers",
+    "isLink": true
+  },
+  {
     "label": "Events",
     "href": "/admin/events",
     "icon": "ci:users",
@@ -32,3 +40,4 @@
     "isLink": true
   }
 ]
+

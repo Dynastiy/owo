@@ -4,6 +4,9 @@ import Users from '@/modules/admin/users.vue'
 import Blog from '@/modules/admin/blog.vue'
 import Create from '@/modules/admin/blog/create.vue'
 
+import Events from '@/modules/admin/events.vue'
+import CreateEvent from '@/modules/admin/events/create.vue'
+
 const routes = [
   {
     path: '/admin/login',
@@ -63,6 +66,30 @@ const routes = [
       requiresAuth: true,
       name: 'blog',
       parent: 'blog'
+    }
+  },
+
+  {
+    path: '/admin/events',
+    name: 'admin-events',
+    component: Events,
+    meta: {
+      layout: 'dashboard',
+      requiresAuth: true,
+      name: 'events',
+      parent: 'events'
+    }
+  },
+
+  {
+    path: '/admin/event/new',
+    name: 'admin-create-event',
+    component: CreateEvent,
+    meta: {
+      layout: 'dashboard',
+      requiresAuth: true,
+      name: 'events',
+      parent: 'events'
     }
   }
 ]

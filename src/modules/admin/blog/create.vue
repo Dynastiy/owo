@@ -23,7 +23,7 @@
           </Field>
         </div>
 
-        <div>
+        <!-- <div>
           <label for="">Category</label>
           <Field
             name="title"
@@ -33,7 +33,7 @@
             v-model="category"
           >
           </Field>
-        </div>
+        </div> -->
 
         <div>
           <label for="">Blog Content</label>

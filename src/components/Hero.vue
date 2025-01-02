@@ -17,23 +17,23 @@ import hero3 from "@/assets/img/hero3.jpg";
 const slides = [
   {
     image: hero2,
-    title: "Find your match. Ignite your journey",
-    description: "Connect with people and make memories.",
+    title: "Empowering Change Together",
+    description: "Join us in creating a brighter future for our community through advocacy, development, and education. Together, we can make a difference!.",
     buttonText: "Become a Member",
     link: "/become-a-member",
   },
   {
     image: hero1,
-    title: "Find your spark. Let love Ignite",
-    description: "Explore profiles and find your love story.",
-    buttonText: "Become a Member",
-    link: "/become-a-member",
+    title: "Volunteers: The Heart of Our Mission",
+    description: "Our dedicated volunteers drive the change we strive for. Be a part of something bigger—lend your time, skills, and passion to transform lives.",
+    buttonText: "Volunteer Now",
+    link: "/become-a-volunteer",
   },
 
   {
     image: hero3,
-    title: "Discover love. Embrace the future",
-    description: "Your love story begins here.",
+    title: "Celebrating Our Community",
+    description: "From cultural festivals to development projects, we bring people together to celebrate diversity and foster unity. There's always something to be a part of!",
     buttonText: "Become a Member",
     link: "/become-a-member",
   },
@@ -64,15 +64,15 @@ const slides = [
           <div
             class="absolute transform translate-x-3 translate-y-[50%] bottom-[50%] left-0 right-0 w-11/12 lg:w-[85%] mx-auto flex flex-col space-y-6 text-light"
           >
-            <h1 class="text-4xl font-bold md:text-6xl w-4/5 md:w-4/5 lg:w-4/5">
+            <h1 class="text-4xl font-bold md:text-6xl w-4/5 md:w-3/5 lg:w-3/5">
               {{ slide.title }}
             </h1>
-            <p>{{ slide.description }}</p>
+            <p class="w-w/5 md:w-3/5 lg:w-3/5">{{ slide.description }}</p>
             <RouteButton
               :text="slide.buttonText"
               :linkTo="slide.link"
               :ariaLabel="slide.buttonText"
-              styles="bg-primary3 border-primary3 text-white hover:bg-transparent hover:text-primary3 hover:border-white hover:bg-white"
+              styles="bg-primary border-primary text-white hover:bg-transparent hover:text-primary hover:border-white hover:bg-white"
             />
           </div>
         </div>

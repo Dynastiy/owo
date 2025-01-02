@@ -3,8 +3,9 @@ import About from '@/modules/app/about.vue'
 import Gallery from '@/modules/app/gallery.vue'
 import Contact from '@/modules/app/contact.vue'
 import BecomeAMember from '@/modules/app/becomeAMember.vue'
-import News from '@/modules/app/news.vue'
-import _SLUG from '@/modules/app/news/_SLUG.vue'
+// import News from '@/modules/app/news.vue'
+import _SLUG from '@/modules/app/blog/_SLUG.vue'
+import Blog from '@/modules/app/blog.vue'
 
 const routes = [
   {
@@ -32,26 +33,26 @@ const routes = [
   },
 
   {
-    path: '/news',
-    name: 'news',
-    component: News,
+    path: '/blog',
+    name: 'blog',
+    component: Blog,
     meta: {
       layout: 'home',
       requiresAuth: false,
-      name: 'news',
-      parent: 'news'
+      name: 'blog',
+      parent: 'blog'
     }
   },
 
   {
-    path: '/news/:slug',
-    name: 'news-details',
+    path: '/blog/:slug',
+    name: 'blog-details',
     component: _SLUG,
     meta: {
       layout: 'home',
       requiresAuth: false,
-      name: 'news',
-      parent: 'news'
+      name: 'blog',
+      parent: 'blog'
     }
   },
 
