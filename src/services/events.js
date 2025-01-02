@@ -8,13 +8,6 @@ import { catchAxiosError, catchAxiosSuccess } from './response'
 
 export default {
   async uploadImage(file) {
-    firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        console.log('User is logged in:', user)
-      } else {
-        console.log('No user logged in.')
-      }
-    })
     try {
       const storageRef = ref(storage, `images/${file.name}`)
       const snapshot = await uploadBytes(storageRef, file)
@@ -35,11 +28,11 @@ export default {
         createdAt: new Date().toISOString()
       })
       console.log('Document added with ID:', docRef.id)
-      catchAxiosSuccess('News Created')
+      catchAxiosSuccess('Event Created')
       return docRef.id
     } catch (error) {
       console.error('Error adding document:', error)
-      catchAxiosError('News not created')
+      catchAxiosError('Event not created')
       throw error
     }
   },

@@ -2,7 +2,7 @@
   <div class="container py-8">
     <h1 class="font-bold text-3xl mb-0 mt-2">Become a Member</h1>
 
-    <div class="mt-4">
+    <div class="mt-4 bg-white p-6 rounded-md">
       <vForm @submit="onSubmit" v-slot="{ meta }" class="flex flex-col gap-2">
         <div>
           <label for="">Full Name</label>

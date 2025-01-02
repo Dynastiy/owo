@@ -34,7 +34,7 @@ const routes = [
   },
 
   {
-    path: '/admin/members',
+    path: '/admin',
     name: 'admin-member-list',
     component: Users,
     meta: {

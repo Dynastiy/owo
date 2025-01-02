@@ -10,8 +10,6 @@
       class="object-cover lg:h-[350px] md:h-[300px] h-[250px] w-full object-center mt-3"
     />
     <div class="mt-1 p-2">
-      
-
       <h4 class="font-medium text-sm leading-tight">{{ item.sub_title }}</h4>
       <div v-html="item.content"></div>
     </div>

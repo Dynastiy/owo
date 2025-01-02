@@ -6,6 +6,9 @@ import BecomeAMember from '@/modules/app/becomeAMember.vue'
 // import News from '@/modules/app/news.vue'
 import _SLUG from '@/modules/app/blog/_SLUG.vue'
 import Blog from '@/modules/app/blog.vue'
+import Events from '@/modules/app/events.vue'
+import _uuid from '@/modules/app/events/_uuid.vue'
+import BecomeAVolunteer from '@/modules/app/becomeAVolunteer.vue'
 
 const routes = [
   {
@@ -56,6 +59,19 @@ const routes = [
     }
   },
 
+
+  {
+    path: '/events',
+    name: 'events',
+    component: Events,
+    meta: {
+      layout: 'home',
+      requiresAuth: false,
+      name: 'events',
+      parent: 'events'
+    }
+  },
+
   {
     path: '/gallery',
     name: 'gallery',
@@ -67,6 +83,19 @@ const routes = [
       parent: 'gallery'
     }
   },
+
+  {
+    path: '/event/:slug',
+    name: 'event-details',
+    component: _uuid,
+    meta: {
+      layout: 'home',
+      requiresAuth: false,
+      name: 'event',
+      parent: 'event'
+    }
+  },
+
 
   {
     path: '/contact',
@@ -89,6 +118,18 @@ const routes = [
       requiresAuth: false,
       name: 'become-a-member',
       parent: 'become-a-member'
+    }
+  },
+
+  {
+    path: '/become-a-volunteer',
+    name: 'become-a-volunteer',
+    component: BecomeAVolunteer,
+    meta: {
+      layout: 'home',
+      requiresAuth: false,
+      name: 'become-a-volunteer',
+      parent: 'become-a-volunteer'
     }
   }
 ]

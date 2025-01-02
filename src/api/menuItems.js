@@ -26,14 +26,14 @@ const items = [
     isLink: true
   },
 
-  {
-    label: 'gallery',
-    href: '/gallery',
-    icon: 'icon-park-outline:transaction-order',
-    hasChildren: false,
-    parent: 'gallery',
-    isLink: true
-  },
+  // {
+  //   label: 'gallery',
+  //   href: '/gallery',
+  //   icon: 'icon-park-outline:transaction-order',
+  //   hasChildren: false,
+  //   parent: 'gallery',
+  //   isLink: true
+  // },
 
   {
     label: 'contact',
